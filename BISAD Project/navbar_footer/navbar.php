@@ -80,7 +80,7 @@ session_start();
       echo  "</ul>";
       echo "</div>";
     } else {
-      echo "<a class='nav-link' href='../main/regist.php'>Register<span class='sr-only'>(current)</span></a>";
+      echo "<a class='nav-link' href='../main/index.php'>Register<span class='sr-only'>(current)</span></a>";
       echo "<a class='nav-link' href='../main/login.php'>Log in<span class='sr-only'>(current)</span></a>";
     }
     ?>

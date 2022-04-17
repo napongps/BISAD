@@ -30,7 +30,7 @@ function usernameExists($conn, $username)
     $sql = "SELECT * FROM customer WHERE username = ?; ";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
-        header("location: ../main/regist.php?error=stmtfailed");
+        header("location: ../main/index.php?error=stmtfailed");
         exit();
     }
 
@@ -42,7 +42,7 @@ function usernameExists($conn, $username)
     $sql = "SELECT * FROM restaurant WHERE username = ?; ";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
-        header("location: ../main/regist.php?error=stmtfailed");
+        header("location: ../main/index.php?error=stmtfailed");
         exit();
     }
 
@@ -72,7 +72,7 @@ function cus_createUser($conn, $fname, $lname, $tel, $address, $username, $passw
     if (is_uploaded_file($imgContent['tmp_name'])) {
 
         if ($imgContent['size'] > 2000000) {
-            header("location: ../main/regist.php?error=picturetoobig");
+            header("location: ../main/index.php?error=picturetoobig");
             exit();
         } else {
             $file = $imgContent['tmp_name'];
@@ -82,7 +82,7 @@ function cus_createUser($conn, $fname, $lname, $tel, $address, $username, $passw
             $sql = "INSERT INTO customer (firstname,lastname,tel,address,username,password,picture) VALUES (?,?,?,?,?,?,?); ";
             $stmt = mysqli_stmt_init($conn);
             if (!mysqli_stmt_prepare($stmt, $sql)) {
-                header("location: ../main/regist.php?error=stmtfailed");
+                header("location: ../main/index.php?error=stmtfailed");
                 exit();
             }
 
@@ -97,7 +97,7 @@ function cus_createUser($conn, $fname, $lname, $tel, $address, $username, $passw
             exit();
         }
     } else {
-        header("location: ../main/regist.php?error=nopicture");
+        header("location: ../main/index.php?error=nopicture");
         exit();
     }
 }
@@ -106,7 +106,7 @@ function res_createUser($conn, $res_name, $description, $close_open, $fname, $ln
 {
     if (is_uploaded_file($imgContent['tmp_name'])) {
         if ($imgContent['size'] > 2000000) {
-            header("location: ../main/regist.php?error=picturetoobig");
+            header("location: ../main/index.php?error=picturetoobig");
             exit();
         } else {
 
@@ -118,7 +118,7 @@ function res_createUser($conn, $res_name, $description, $close_open, $fname, $ln
             $sql = "INSERT INTO restaurant (res_name,description,open,username,password,firstname,lastname,tel,picture) VALUES (?,?,?,?,?,?,?,?,?); ";
             $stmt = mysqli_stmt_init($conn);
             if (!mysqli_stmt_prepare($stmt, $sql)) {
-                header("location: ../main/regist.php?error=stmtfailed");
+                header("location: ../main/index.php?error=stmtfailed");
                 exit();
             }
 
@@ -133,7 +133,7 @@ function res_createUser($conn, $res_name, $description, $close_open, $fname, $ln
             exit();
         }
     } else {
-        header("location: ../main/regist.php?error=nopicture");
+        header("location: ../main/index.php?error=nopicture");
         exit();
     }
 }

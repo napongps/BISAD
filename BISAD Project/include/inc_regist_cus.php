@@ -16,23 +16,23 @@ if (isset($_POST['submit'])) {
 
     if (invalidUsername($username) !== false) {
 
-        header("location: ../main/regist.php?error=invaliduid");
+        header("location: ../main/index.php?error=invaliduid");
         exit();
     }
     if (passwordmatch($password, $passwordcheck) !== false) {
 
-        header("location: ../main/regist.php?error=passworddontmatch");
+        header("location: ../main/index.php?error=passworddontmatch");
         exit();
     }
     if (usernameExists($conn, $username) !== false) {
 
-        header("location: ../main/regist.php?error=usernametaken");
+        header("location: ../main/index.php?error=usernametaken");
         exit();
     }   
 
     cus_createUser($conn, $fname, $lname, $tel, $address, $username, $password, $imgContent);
 } else {
-    header("location: ../main/regist.php");
+    header("location: ../main/index.php");
     exit();
 }
 ?>
