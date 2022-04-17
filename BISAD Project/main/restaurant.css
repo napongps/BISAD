@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+.li {
+    width: fit-content;
+    display: inline-block;
+    margin: 10px;
+}
+
+a, a:hover {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+img {
+    display: inline-block;
+}
+
+button {
+    display: inline-block;
+}
+
+.container .wrapper {
+    width: 1014px;
+    text-align: center;
+}
+
+.container .wrapper .order-box .card {
+    height: 80px;
+    padding: 10px;
+    text-align: left;
+}
+
+.container .wrapper .order-box .card img {
+    width: 50px;
+}
+
+.container .wrapper .order-box .card p {
+    font-size: 25px;
+    padding: 5px;
+}
+
+.container .wrapper .button-list .button-box .card {
+    width: 150px;
+    border: none;
+}
+
+.container .wrapper .button-list .button-box .card img {
+    display: inline-block;
+}
+
+.container .wrapper .button-list .button-box .card p {
+    font-size: 20px;
+}
+
+.container .wrapper .menu-list {
+    float: left;
+    text-align: left;
+    width: 100%;
+    height: fit-content;
+    display: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container .wrapper .menu-list .row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.container .wrapper .menu-list .card {
+    width: 294px;
+    height: 180px;
+}
+
+.container .wrapper .menu-list .card .img-box {
+    width: 125px;
+    height: 100%;
+}
+
+.container .wrapper .menu-list .card img {
+    width: 120px;
+    height: 120px;
+}
+
+.container .wrapper .menu-list .card .text-box {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.container .wrapper .menu-list .card p {
+    font-size: 20px;
+}
+
+.container .wrapper .menu-list .card-body {
+    width: 100px;
+    padding: 0;
+}
+
+.container .wrapper .menu-list .button-box {
+    width: 100%;
+}
+
+.container .wrapper .edit-inform {
+    text-align: left;
+    width: 100%;
+    height: fit-content;
+    display: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.container .wrapper .edit-inform .form .img-box {
+    margin-bottom: 30px;
+}
+
+.container .wrapper .edit-inform .form .img-box img {
+    width: 200px;
+    height: 200px;
+}
+
+.container .wrapper .order-history {
+    width: 100%;
+    height: fit-content;
+    display: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.container .wrapper .order-history .card {
+    margin-bottom: 20px;
+}
+
+.container .wrapper .order-history .card p {
+    font-size: 20px;
+}
+
+.container .wrapper .work-box, .container .wrapper .add-box  {
+    text-align: left;
+    display: none;
+}
+
+.container .wrapper .work-box .img-box .container .wrapper .add-box .img-box{
+    margin: 50px;
+}
+
+.container .wrapper .work-box .img-box img, .container .wrapper .add-box .img-box img {
+    width: 200px;
+    height: 200px;
+}
+
+.container .wrapper .work-box .form label, .container .wrapper .add-box .form label {
+    font-size: 18px;
+}
+
+.container .wrapper .work-box .form input, .container .wrapper .add-box .form input {
+    margin-bottom: 20px;
+}
+
+.container .wrapper .work-box .form .button-box, .container .wrapper .add-box .form .button-box {
+    text-align: right;
+}
+
+.container .wrapper .order {
+    display: none;
+}
+
+.container .wrapper .order .card {
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.container .wrapper .order .card p {
+    font-size: 20px;
+}
+
+.modal .modal-dialog .modal-content .modal-footer button{
+    margin-top: 0;
+}
