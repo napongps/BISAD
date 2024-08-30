@@ -1,4 +1,4 @@
 # Business System Analysis And Design Project
 
-Delivery system mocking. The project include two users - client and restaurant.
+ Mocking food delivery system. The project include two users - client and restaurant.
   
